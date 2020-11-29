@@ -45,7 +45,7 @@ import { ChartsModule } from 'ng2-charts';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MultiTranslateHttpLoader } from 'ngx-translate-multi-http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { SidebarHoverDirective } from './containers/directives/sidebar-hover.directive';
+
 
 @NgModule({
   imports: [
@@ -76,8 +76,7 @@ import { SidebarHoverDirective } from './containers/directives/sidebar-hover.dir
     P404Component,
     P500Component,
     LoginComponent,
-    RegisterComponent,
-    SidebarHoverDirective
+    RegisterComponent
   ],
   providers: [{
     provide: LocationStrategy,
