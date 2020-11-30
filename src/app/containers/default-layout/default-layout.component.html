@@ -58,24 +58,22 @@
   </ul>
 </app-header>
 <div class="app-body">
-  <app-sidebar [display]="'lg'" [fixed]="true">
-    <app-sidebar-nav class="nav-tab-base" [navItems]="navItems" [perfectScrollbar] [disabled]="sidebarMinimized"></app-sidebar-nav>
-    <app-sidebar-minimizer style="background-color: #1D2345"></app-sidebar-minimizer>
-  </app-sidebar>
+  <ast-sidebar [display]="'lg'" [fixed]="true">
+    <ast-sidebar-nav class="nav-tab-base" [disabled]="sidebarMinimized" [navItems]="navItems" [perfectScrollbar]></ast-sidebar-nav>
+    <ast-sidebar-minimizer style="background-color: #1D2345"></ast-sidebar-minimizer>
+  </ast-sidebar>
   <!-- Main content -->
   <main class="main">
     <!-- Breadcrumb -->
     <!-- breaking change 'cui-breadcrumb' -->
-    <cui-breadcrumb>
+    <ast-cui-breadcrumb>
       <!-- Breadcrumb Menu-->
       <li class="breadcrumb-menu d-md-down-none">
         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-          <a class="btn" href="#"><i class="icon-speech"></i></a>
-          <a class="btn" [routerLink]="['/dashboard']"><i class="icon-graph"></i> &nbsp;Dashboard</a>
-          <a class="btn" href="#"><i class="icon-settings"></i> &nbsp;Settings</a>
+          <a class="btn" [routerLink]="['/dashboard']"><i class="icon-graph"></i> &nbsp; {{ 'Dashboard' | translate }}</a>
         </div>
       </li>
-    </cui-breadcrumb>
+    </ast-cui-breadcrumb>
     <!-- deprecation warning for 'app-breadcrumb' -->
     <!--<ol class="breadcrumb">-->
       <!--<app-breadcrumb></app-breadcrumb>-->
@@ -92,7 +90,7 @@
       <router-outlet></router-outlet>
     </div><!-- /.container-fluid -->
   </main>
-  <app-aside [fixed]="true" [display]="false" [ngClass]="'test'">
+  <!-- <app-aside [fixed]="true" [display]="false" [ngClass]="'test'">
     <tabset>
       <tab>
         <ng-template tabHeading><i class="icon-list"></i></ng-template>
@@ -342,7 +340,7 @@
         </div>
       </tab>
     </tabset>
-  </app-aside>
+  </app-aside> -->
 </div>
 <app-footer>
   <span><a href="#">{{ 'APP_NAME' | translate }}</a> &copy; {{ 'BCC' | translate }} </span>

@@ -65,34 +65,25 @@ export const navItems: NavData[] = [
     icon: 'icon-pencil'
   },
   {
-    name: 'Colors',
-    url: '/theme/colors',
-    icon: 'icon-drop'
-  },
-  {
-    name: 'Typography',
-    url: '/theme/typography',
-    icon: 'icon-pencil'
-  },
-  {
-    name: 'Colors',
-    url: '/theme/colors',
-    icon: 'icon-drop'
-  },
-  {
-    name: 'Typography',
-    url: '/theme/typography',
-    icon: 'icon-pencil'
-  },
-  {
-    name: 'Colors',
-    url: '/theme/colors',
-    icon: 'icon-drop'
-  },
-  {
-    name: 'Typography',
-    url: '/theme/typography',
-    icon: 'icon-pencil'
+    name: 'Orders',
+    url: 'Orders',
+    icon: 'icon-globe',
+    children: [
+      {
+        name: 'Receive Goods',
+        url: '/asset/reception',
+        icon: 'icon-basket-loaded',
+        authorities: ['USER_LIST'],
+        requiredRole: 'STORE_KEEPER'
+      },
+      {
+        name: 'MRR',
+        url: '/asset/reception/mrr',
+        icon: 'icon-basket-loaded',
+        authorities: ['MRRS','USER_LIST'],
+        requiredRole: 'STORE_KEEPER'
+      }
+    ]
   },
   // {
   //   title: true,

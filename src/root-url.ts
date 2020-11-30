@@ -1,0 +1,21 @@
+const GLOBAL_URL_BASE = 'http://dev-iap.grp.gov.bd/global/api';
+const BCC_URL_BASE = 'http://dev-iap.grp.gov.bd/ictd';
+export const CMN_ORGANOGRAM_URL = `${GLOBAL_URL_BASE}/cmn-service-organogram/cmn-service-organogram/`;
+export const HRM_PIM_URL = `${GLOBAL_URL_BASE}/hrm-service-pim/hrm-service-pim/`;
+export const PRC_URL = `${BCC_URL_BASE}/api/prc-core-procure/prc-core-procure/`;
+export const CATALOGUE_URL = `${BCC_URL_BASE}/inv-api/service/catalogue/inv-catalogue-service/`;
+export const AUTH_SERVICE_URL = `${GLOBAL_URL_BASE}/auth-service/auth-service/sec/master/`;
+export const BASE_HREF = '/grp-portal';
+export const NOTIFICATION_URL = `${BCC_URL_BASE}/api/cmn-service-notification/cmn-service-notification/`;
+export const ASSET_URL = 'http://localhost:9001/';
+export const DEPLOYMENT_URL = 'http://45.33.38.145:4300/grp-portal';
+export const DASHBOARD_URL = 'http://45.79.102.237:94/grp-sso/dashboard/';
+export const FILE_ATTACHMENT_BASE_URL = 'http://45.79.102.237:8086/';
+export const FILE_SERVICE_NAME = '/cmn-service-file-management/cmn-service-file-management/';
+export const FILE_ATTACHMENT_URL = GLOBAL_URL_BASE + FILE_SERVICE_NAME;
+export const REPORT_URL = 'http://118.67.221.75:8085/';
+// TODO: Need to replace them as soon as possible
+export const SSO_URL = 'http://45.79.102.237:94/grp-sso/';
+export const SEC_URL_TEMP = 'http://45.79.102.237:8011/auth-service/sec/';
+export const INV_URL = `${BCC_URL_BASE}/inv-api/service/inventory/bcc-inventory/`;
+export const CMN_GLOBAL_URL = `${GLOBAL_URL_BASE}/cmn-service-global/cmn-service-global/`;
